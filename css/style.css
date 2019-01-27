@@ -1,0 +1,201 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: rgb(0,175,150);
+}
+html, body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  font-family: 'PT Sans', sans-serif;
+}
+.centered-heading{
+  text-align:center; }
+.App {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+#nav-menu{
+  color: rgb(255,255,255);
+  background-color: rgb(0, 175, 150);
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-content:center;
+  text-align: center;}
+.nav-bar-item{
+  height: 50px;
+  display: grid;
+  align-content: center;
+  transition: background-color 0.5s;}
+  .nav-bar-item:hover{
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+@media(min-width: 768px){
+  #nav-menu{
+    position: fixed;
+    
+    width: 150px;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content:flex-start;}
+  .nav-bar-item{
+    margin:0;
+    height: 100%;}
+  .page-banner{
+    margin-left: 150px;} 
+  .main-content{
+    margin-left: 150px;}  
+}
+.page-banner{
+  color: rgb(255,255,255);
+  margin-top: 50px;
+  padding-top: 20px;
+  min-height: 50vh;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  justify-content: center;}
+.page-banner-icon{
+  font-size: 150px;
+}
+.page-heading{
+  font-size: 1.5em;}
+#profile-picture{
+  shape-outside: circle(50%);
+  width: 200px;
+  height: 200px;  
+  background-image: url('../images/IMG_0015.JPG');
+  background-position: center;
+  background-size: 200px;
+  border-radius: 50%;
+  margin:auto; 
+}
+
+.main-content{
+  background-color: rgb(240,240,240);
+  padding: 20px 0;
+  color: black;
+}
+/*about sections*/
+.about-info-container{
+  width: 80vw;
+  margin: auto;
+  line-height: 30px;
+  display: grid;
+  justify-content: center;
+}
+.hobbies-info{
+  padding: 20px;
+  display: grid;
+  justify-content: center;}
+
+/*projects section*/
+.project-card-container{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+.project-item{
+  cursor: pointer;
+  height: 300px;
+  width: 300px; }
+.project-item-front{
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255,255,255);
+  transition: all .5s;
+}
+.project-item-back{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-color: rgb(0,0,0);
+  color: rgb(255,255,255);
+  display: grid;
+  align-content: flex-start;
+  justify-content: flex-start;
+  transition: all .5s; }
+.code-pen-project-icon{
+  font-size: 100px;
+}
+.project-item-heading{
+  margin:10px;}
+.project-item-ul{
+  line-height: 20px;
+  margin: 0px;}
+
+/*project specific colors*/
+.code-pen-project .project-item-front{
+  background-color: rgb(0,0,0);
+  color: rgb(255,255,255);
+  font-size: 100px; }
+
+
+.pomodoro-clock-project .project-item-front{
+  background-color: rgb(188, 202, 186); }
+
+.calculator-project .project-item-front{
+  background-color: rgb(255, 187, 0); }
+
+.drum-machine-project .project-item-front{
+  background-color: rgb(0, 145, 40); }
+
+.more-taters-please-project .project-item-front{
+  background-color: rgb(200, 200, 200); }
+
+.jubba-project .project-item-front{
+  background-color: rgb(160, 142, 119); }
+
+.mo-finishes-project .project-item-front{
+  background-color: rgb(156,149,149); }
+
+.icys-adventure-project .project-item-front{
+  background-color: rgb(0, 167, 233); }
+
+.fairmont-grill-project .project-item-front{
+  background-color: rgb(235, 223, 186); }
+
+.florence-ave-painters-project .project-item-front{
+  background-color: rgb(235, 230, 224); }
+
+
+/*Contact section*/
+.contact-link-container{
+  color:rgb(255,255,255);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+.contact-link{
+  background-color: black;
+  padding: 20px;
+  font-size: 3em;
+  border-radius: 50%;
+}
+.contact-link-container a{ color: rgb(255,255,255);}
+.contact-link:hover{
+  background-color: rgb(0,175,150);
+}
