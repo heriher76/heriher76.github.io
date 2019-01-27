@@ -107,6 +107,7 @@ var About = function About(props) {
               React.createElement("li", null, React.createElement("a", { href: "https://sekolahkoding.com", target: "_blank", rel: "noopener noreferrer" }, "Responsive Web Design"), " - sekolahkoding.com")),
             React.createElement("br", null)),
 
+          React.createElement("li", null, "FreeLancer in Sanbersy.com"),
           React.createElement("li", null, "Bachelor of Informatics Engineering - State Islamic University Sunan Gunung Djati"))),
 
       React.createElement("br", null),
